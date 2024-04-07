@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body class="font-nunito"> 
+<!-- Intro section -->
+<div class="bg-gradient-to-t from-indigo-300 h-1/2 min-h-[50vh] lg:h-screen relative overflow-hidden">
+    <!-- navigation -->
+    <nav class="w-full fixed top-0 bg-white z-10">
+        <div class="container mx-auto py-5 flex justify-between text-slate-800">
+                <div class="flex items-center gap-2">
+                    <img src="./img/logo.png" />
+                    <span class="text-2xl font-bold text-indigo-900">portInfinity</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 items-center text-gray-700 font-bold">
+                    <li class="hover:text-gray-400"><a href="#">Homepage</a></li>
+                    <li class="hover:text-gray-400"><a href="#">About Us</a></li>
+                    <li class="hover:text-gray-400"><a href="#">Services</a></li>
+                    <li class="hover:text-gray-400"><a href="#">Works</a></li>
+                </ul>
+                <img class="hidden md:block h-5 mt-4 cursor-pointer" src="./img/moon.png" />
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer mt-4 z-10">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu" class="hidden bg-indigo-950 text-white rounded-b-3xl absolute top-0 left-0 w-full space-y-10 text-center p-4">
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                </ul>
+        </div>
+    </nav>
+    <!-- intro content -->
+    <img id="man" src="./img/man.png" class="absolute bottom-0 right-0 h-4/6 object-cover lg:left-0 mx-auto z-10" />
+    <div class="hidden lg:block absolute -bottom-1/4 w-big h-big bg-indigo-900 rounded-full right-0 left-0 mx-auto -z-10"></div>
+    <div class="absolute top-1/2 left-8 text-xl sm:left-16 sm:text-3xl md:left-44 md:top-1/2 md:text-5xl lg:left-40">
+        <span class="text-gray-600">Freelance</span>
+        <p class="text-red-500">Developer</p>
+    </div>
+    <div></div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
